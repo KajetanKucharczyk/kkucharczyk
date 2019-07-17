@@ -1,0 +1,26 @@
+/* GENERAL */
+div.footer{
+    font-family: FS;
+    text-align: center;
+}
+
+/* DESKTOP */
+div.footer.desktop{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    font-size: 15px;    
+    width: 100%;    
+}
+
+/* MOBILE */
+div.footer.mobile{
+    position: fixed;
+    background-color: black;
+    bottom: 0px;
+    left: 0px;
+    line-height: 3vh;
+    font-size: 1.75vh;
+    width: 100vw;
+    height: 3vh;
+}

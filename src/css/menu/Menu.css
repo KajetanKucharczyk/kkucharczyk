@@ -1,0 +1,33 @@
+/* GENEARAL */
+div.menuContainer{
+    position: absolute;
+}
+
+ul.menu-list{
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    font-family: Enigmatic;
+}
+
+/* DESKTOP */
+div.menuContainer.desktop{
+    width: 100%;
+    height: 50vh;
+    bottom: 25px;
+}
+
+ul.menu-list.desktop{
+    font-size: 25px;
+}
+
+/* MOBILE */
+div.menuContainer.mobile{
+    width: 100vw;
+    height: 50vh;
+    top: 25vh;
+}
+
+ul.menu-list.mobile{
+    font-size: 4vh;
+}

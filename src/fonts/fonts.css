@@ -1,0 +1,24 @@
+@font-face {
+    font-family: FS;
+    src: url(FS.otf);
+}
+
+@font-face {
+    font-family: FSEB;
+    src: url(FSEB.otf);
+}
+
+@font-face {
+    font-family: Calibri;
+    src: url(Calibri.ttf);
+}
+
+@font-face {
+    font-family: TW;
+    src: url(TW.ttf);
+}
+
+@font-face {
+    font-family: Enigmatic;
+    src: url(Enigmatic.ttf);
+}

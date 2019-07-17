@@ -1,0 +1,70 @@
+div.container{
+    background-color: white;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;  
+}
+
+div.header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    &.desktop{
+        width: 300px;
+        height: 100vh;
+    }
+    &.mobile{
+        width: 100vw;
+        height: 100vh;
+        top: -88vh;
+        transition: all 0.5s ease-in-out 0s;
+
+        &.opened{
+            top: -3vh;
+        }
+        &.closed{
+            top: -88vh;
+        }
+    }
+}
+div.header > div{
+    width: 300px;
+    height: 100vh;
+    position: relative;
+}
+div.content{
+    background-color: white;
+    position: fixed;
+    overflow-y: auto;
+
+    &.desktop{
+        width: calc(100vw - 300px);
+        height: 102vh;
+        top: 0px;
+        right: 0px;
+    }  
+    &.mobile{
+        width: 100vw;
+        height: 87vh;
+        top: 12vh;
+        left: 0px;
+    } 
+}  
+div.field{
+    padding-bottom: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px #c7c7c7;
+}

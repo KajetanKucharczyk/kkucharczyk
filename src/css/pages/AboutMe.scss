@@ -1,0 +1,145 @@
+$blue: #0079c1;
+$dark-blue: rgba(0, 0, 0, 0.25);
+$highlight-height: 7vh;
+$highlight-margin: 4vh;
+
+div.about-me {
+    overflow: hidden;
+
+    img {
+        position: fixed;
+        width: 100%;
+        margin-bottom: -4px;
+        z-index: -1;
+    }
+
+    div.highlights {
+        height: $highlight-height;
+        line-height: $highlight-height;
+        font-family: TW;
+        font-size: 5vh;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+
+        &.desktop {
+            background-color: rgba(0, 0, 0, 0.35);
+            width: 35vw;
+            position: absolute;
+            $highlight-height: 7vh;
+            $highlight-margin: 5vh;
+            transform: rotate(2deg);
+
+            &.field-1 {
+                top: $highlight-margin;
+                left: $highlight-margin;
+            }
+            &.field-2 {
+                top: 2 * $highlight-margin + 1 * $highlight-height;
+                left: $highlight-margin;
+            }
+            &.field-3 {
+                top: 3 * $highlight-margin + 2 * $highlight-height;
+                left: $highlight-margin;
+            }
+            &.field-4 {
+                top: 4 * $highlight-margin + 3 * $highlight-height;
+                left: $highlight-margin;
+            }
+            &.field-5 {
+                top: 5 * $highlight-margin + 4 * $highlight-height;
+                left: $highlight-margin;
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.75);
+                transform: rotate(-2deg);
+            }
+        }
+        &.mobile {
+            width: 100%;
+            &:nth-child(even) {
+                background-color: rgba(0, 0, 0, 0.25);
+            }
+            &:nth-child(odd) {
+                background-color: rgba(0, 0, 0, 0.35);
+            }
+        }
+    }
+}
+
+div.skills {
+    margin-top: 1000px;
+    background-color: #009f4d;
+    overflow: auto;
+    margin-bottom: -4px;
+    display: inline-block;
+    overflow-x: hidden;
+    padding-right: 2vh;
+    &.desktop {
+        width: calc(60% - 2vh);
+        border-right: 1px solid black;
+        height: 100vh;
+    }
+    &.mobile {
+        width: 100%;
+        height: auto;
+    }
+    div.hastags-header {
+        font-size: 5vh;
+        font-family: FS;
+        margin-left: 5vh;
+        margin-top: 2vh;
+    }
+    span.hashtag {
+        font-family: TW;
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-left: 2vh;
+        white-space: nowrap;
+        &.desktop {
+            font-size: 3vh;
+        }
+        &.mobile {
+            font-size: 5vh;
+        }
+    }
+}
+
+div.links {
+    margin-top: 1000px;
+    background-color: $blue;
+    position: relative;
+    display: inline-block;
+    &.desktop {
+        width: calc(40% - 1px);
+        float: right;
+        height: 100vh;
+    }
+    &.mobile {
+        width: 100%;
+        height: auto;
+    }
+    div.link-item {
+        width: calc(100% - 20px);
+        border: 1px solid black;
+        margin: 1vh;
+        line-height: 7vh;
+        text-align: center;
+        font-family: TW;
+        font-size: 5vh;
+        background-color: $blue;
+        color: white;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        &:hover {
+            background-color: $dark-blue;
+        }
+        &:nth-child(1) {
+            &.desktop {
+                margin-top: calc((1000px - 25vh) / 2);
+            }
+        }
+    }
+}

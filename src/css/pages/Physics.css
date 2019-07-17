@@ -1,0 +1,124 @@
+img.AGH-image{
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+div.physics p{
+    position: absolute;    
+    right: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+p.AGH-wydzial{
+    top: 0px;
+    font-family: FS;
+    font-weight: bold;
+    font-size: 5vw;
+    width: 100%;
+    text-align: right;   
+    margin-top: 2vh;
+    color: rgba(0,0,0,0.2);
+}
+p.AGH-profil{
+    bottom: 2vh;
+    font-family: FS;
+    font-weight: bold;
+    font-size: 3.5vw;
+    width: 50%;
+    text-align: right;
+    text-transform: uppercase;
+}
+p.AGH-wydzial.mobile{
+    font-size: 6vw;
+}
+p.AGH-profil.mobile{
+    font-size: 5vw;
+}
+
+
+
+/* PHYSIC LABEL */
+div.physics-label{
+    background-color: #496c9c;
+    color: white;    
+    text-align: center;
+    font-family: TW;
+    cursor: pointer;
+    border:1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px black;
+    transition: all ease-in-out 200ms;
+}
+div.physics-label:hover{
+    background-color: #304766;
+}
+div.physics-label.desktop{
+    height: 50px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 30px;
+}
+div.physics-label.desktop:last-of-type{
+    margin-bottom: 10px;
+}
+div.physics-label.mobile{
+    height: 5vh;
+    width: calc(100% - 2vh);
+    margin-left: 1vh;
+    margin-top: 1vh;
+    line-height: 5vh;
+    font-size: 2.5vh;
+}
+div.physics-label.mobile:last-of-type{
+    margin-bottom: 1vh;
+}
+
+div.physics-file{
+    background-color: #71a5eb;
+    color: white;    
+    text-align: center;
+    font-family: TW;
+    cursor: pointer;
+    border:1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px black;    
+    transition: all ease-in-out 200ms;
+    overflow: hidden;
+    height: 0;
+}
+div.physics-file:hover{
+    background-color: #5e8ac4;
+}
+div.physics-file.desktop{
+    width: calc(100% - 70px);
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 30px;
+}
+div.physics-file.desktop:last-of-type{
+    margin-bottom: 10px;
+}
+div.physics-file.mobile{
+    height: 5vh;
+    width: calc(100% - 2vh);
+    margin-left: 1vh;
+    margin-top: 1vh;
+    line-height: 5vh;
+    font-size: 2.5vh;
+}
+div.physics-file.mobile:last-of-type{
+    margin-bottom: 1vh;
+}
+
+div.physics-file.hidden{
+    display: none;
+}
+div.physics-file.opened{
+    display: block;
+}
+

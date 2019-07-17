@@ -1,0 +1,23 @@
+/* GENERAL */
+div.pageTitle{
+    position: absolute;
+    text-align: center;
+    font-family: TW;
+    cursor: default;
+}
+
+/* DESKTOP */
+div.pageTitle.desktop{
+    transform: rotate(-90deg);
+    font-size: 80px;
+    top: 150px;
+    left: 0px;
+}
+
+/* MOBILE */
+div.pageTitle.mobile{
+    top: 88%;
+    width: 100vw;
+    height: 12vh;
+    font-size: 5.75vh;
+}

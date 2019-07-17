@@ -1,0 +1,65 @@
+/* GENERAL */
+div.headerButton{
+    width: 5vmax;
+    height: 4vmax;
+    position: fixed;
+    top: calc((12vh - 4vmax) / 2);
+    left: 35px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+div.bar{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    height: 0.8vmax;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.bar:nth-child(1) {
+    z-index: 3;
+    top: 0px;
+}
+.bar:nth-child(2) {
+    z-index: 2;
+    top: 1.6vmax;
+}
+.bar:nth-child(3) {
+    z-index: 3;
+    top: 3.2vmax;
+}
+
+.bar.out:nth-child(1) {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    top: 0px;
+    height: 0.8vmax;
+}
+.bar.out:nth-child(2) {
+    background-color: white;
+}
+.bar.out:nth-child(3) {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    top: 3.2vmax;
+    height: 0.8vmax;
+}
+
+.bar.over:nth-child(1) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 13px;
+    height: 1vmax;
+}
+.bar.over:nth-child(2) {
+    background-color: black;
+}
+.bar.over:nth-child(3) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    top: 13px;
+    height: 1vmax;
+}

@@ -1,0 +1,88 @@
+
+div.contact {
+    overflow-x: hidden;
+
+    div.contact-item {
+        height: 75vh;
+        position: relative;
+        cursor: pointer;
+
+        &.email {
+            background-color: rgba($color: #c24c4c, $alpha: 1);
+
+            &  > div.background{
+                border-bottom: 75vh solid rgba($color: #923939, $alpha: 1);
+                border-left: 0px solid transparent;
+                border-right: 25vh solid transparent;
+                width: 25%;
+            }
+        }
+        &.messenger {
+            background-color: rgba($color: #3953c5, $alpha: 1);
+
+            &  > div.background{
+                border-top: 75vh solid rgba($color: #2c3e8f, $alpha: 1);
+                border-left: 0px solid transparent;
+                border-right: 25vh solid transparent;
+                width: 25%;
+            }
+        }
+        &.phone {
+            background-color: rgba($color: #49b88a, $alpha: 1);
+
+            &  > div.background{
+                border-bottom: 75vh solid rgba($color: #327a5c, $alpha: 1);
+                border-left: 0px solid transparent;
+                border-right: 25vh solid transparent;
+                width: 25%;
+            }
+        }
+        &.address {
+            background-color: rgba($color: #4ca9d4, $alpha: 1);
+
+            &  > div.background{
+                border-top: 75vh solid rgba($color: #356a83, $alpha: 1);
+                border-left: 0px solid transparent;
+                border-right: 25vh solid transparent;
+                width: 25%;
+            }
+        }
+
+        .text{
+            color: white;
+            font-family: TW;
+            font-size: 12vh;
+            position: absolute;
+            left: calc(25% - 30vh);
+            width: 75vh;
+            transform: rotate(70.5deg);
+            transform-origin: 0px 37.5vh;
+        }
+        .text-second{
+            color: white;
+            font-family: TW;
+            font-size: 12vh;
+            position: absolute;
+            left: calc(25% - 43vh);
+            width: 75vh;
+            transform: rotate(-70.5deg);
+            transform-origin: 0px -37.5vh;
+        }
+        div.data{
+            color:white;
+            position: absolute;
+            
+            right: 0px;
+            text-align: center;
+            width: 70%;
+            font-family: FS;
+            font-size: 6vw;
+            &.data-first{
+                top: 6vw;
+            }
+            &.data-second{
+                bottom: 6vw;
+            }
+        }
+    }
+}

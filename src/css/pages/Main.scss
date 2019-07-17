@@ -1,0 +1,190 @@
+/* GENERAL */
+div.panel{
+}
+div.panel > div{
+}
+img.myImage, img.myImage-hidden{
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px black;
+}
+img.myImage-hidden{
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+img.myImage-hidden:hover{
+    opacity: 1;
+}
+div.myName{
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    font-family: TW;
+    position: absolute;
+}
+div.myName > p{
+    padding: 0;
+    margin: 0;
+}
+div.myName > p._title{   
+    width: 100%;
+    font-family: FS;
+    font-size: 2.6vw;
+}
+div.myName > p.name{
+    font-size: 7vw;
+}
+div.myName > p.email{    
+    width: 100%;
+    font-family: FS;
+    font-size: 2.55vw;      
+}
+div.myName > p.email > a{
+    cursor: pointer;
+    color: black; 
+}
+div.boards{
+    width: auto;
+    height: auto;
+    margin-top: 12.5vh;
+}
+div.board{    
+    width: 40%;
+    background-color: rgba(0,0,0,.65);
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0px 1px 5px black;
+    margin: 1vmax;
+    padding: 1vmax;
+    position: relative;
+    height: 12vh;
+
+    transition: all 200ms ease-in-out;
+}
+div.board:hover{
+    background-color: rgba(0,0,0,.85)
+}
+div.board > div{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+div.board span{
+    font-family: TW;
+    font-size: 3vh;
+}
+div.board p{
+    font-family: FS;
+    font-size: 2.75vh;
+    position: absolute;
+    bottom: 0px;
+}
+div.quick-buttons{
+    width: calc(100% - 2vh);
+    height: auto;
+    font-family: TW;
+    color: white;
+}
+div.quick-buttons > div{
+    font-size: 3vw;
+    line-height: 10vh;
+    text-align: center;
+    cursor: default;
+    background-color: #3e6ec7;
+
+    transition: all 200ms ease-in-out;
+}
+div.quick-buttons > div:hover{
+    background-color: #404f6b;
+}
+
+
+
+/* DESKTOP */
+div.quick-buttons.desktop{
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+}
+div.quick-buttons.desktop > div{
+    float: left;
+    width: calc(100% / 3 - 2px);
+    border-left: 2px solid white;
+}
+div.quick-buttons.desktop > div:hover{}
+
+
+/* MOBILE */
+div.panel{
+    height: auto;
+}
+div.panel > div{}
+img.myImage, img.myImage-hidden{
+    margin-top: 2vh;
+}
+div.myName.mobile{}
+div.myName.mobile > p{}
+div.myName.mobile > p._title.mobile{   
+    font-size: 4vw;
+}
+div.myName.mobile > p.name.mobile{
+    font-size: 10vw;
+}
+div.myName.mobile > p.email.mobile{    
+    font-size: 4vw;      
+}
+div.myName.mobile > p.email.mobile > a{}
+div.boards.mobile{
+    margin-top: 90vw;
+}
+div.board.mobile{    
+    width: calc(100% - 4vmax);
+}
+div.board.mobile span{}
+div.board.mobile p{}
+div.quick-buttons.mobile{
+    widows: calc(100% - 2vmax);
+    margin-left: 1vmax;
+    margin-top: 3vmax;
+}
+div.quick-buttons.mobile > div{    
+    width: 100%;
+    margin-bottom: 1vh;
+    border: 1px solid black;
+    box-shadow: 0px 1px 5px black;
+    font-size: 4vh;
+}
+div.quick-buttons.mobile > div:hover{}
+
+
+
+div.loading-page{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    & > div{
+        position: absolute;
+        left: calc((100% - 30vw) / 2);        
+        width: 30vw;
+        height: 10vw;
+        color:white;
+        text-align: center;
+        line-height: 10vw;
+        font-family: TW;
+
+    }
+
+    &.desktop{
+        & > div{
+            top: calc((100vh - 10vw) / 2);
+            font-size: 5vw;
+        }
+    }
+    &.mobile{
+        & > div{
+            top: calc((100vh - 10vw - 12vh - 3vh) / 2);
+            font-size: 10vw;
+        }
+    }
+}
