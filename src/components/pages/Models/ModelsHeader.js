@@ -71,6 +71,8 @@ class ModelsHeader extends React.Component {
 
 
     render() { 
+
+        console.log(this.props.type)
         
         let hidden = {
             display: "none"

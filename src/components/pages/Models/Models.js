@@ -6,6 +6,7 @@ import "./../../../css/pages/Models.scss"
 import Post from "./Post"
 import Overview from "./Overview"
 import ModelsHeader from "./ModelsHeader"
+import Category from "./Category"
 
 class Models extends React.Component {
 
@@ -16,6 +17,7 @@ class Models extends React.Component {
         this.state = {
             download: false,
             downloadData: {},
+            copiedData: {},
             mode: null,
             type: "overview",
             clickedBoxId: null,
@@ -42,7 +44,7 @@ class Models extends React.Component {
     downloadData() {
 
         $.ajax({
-            url: "http://kkucharczyk.pl/serwer/modele/recent",
+            url: "http://kkucharczyk.pl/serwer/modele/all",
             async: false,
             beforeSend: function(){
                 $('body').append(<div className = "przeslona">Ładowanie</div>)
@@ -103,6 +105,18 @@ class Models extends React.Component {
             overflow: "scroll"
         }
 
+        if(this.state.downloadData.length > 9) {
+
+            let copiedData = this.state.downloadData
+            copiedData.length = 9
+
+            this.setState({
+                copiedData: this.state.downloadData,
+                downloadData: copiedData
+            })
+
+        }
+
         if(this.state.type === "overview"){
 
             return(
@@ -123,6 +137,7 @@ class Models extends React.Component {
                 <div className = {"models " + this.props.mode} style = {overflow}>
 
                     <ModelsHeader viewController = {this.changingView} mode = {this.props.mode} type = {this.state.type} />
+                    <Category click = {this.processClicking} mode = {this.props.mode} data = {this.state.copiedData} />
 
                 </div>           
                 
