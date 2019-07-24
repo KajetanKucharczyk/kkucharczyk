@@ -17,9 +17,9 @@ class Models extends React.Component {
         this.state = {
             download: false,
             downloadData: {},
-            copiedData: {},
             mode: null,
             type: "overview",
+            prevType: null,
             clickedBoxId: null,
             clickedBoxName: null
         }
@@ -66,10 +66,11 @@ class Models extends React.Component {
 
     }
 
-    processClicking = (id, name) => {
+    processClicking = (id, name, type) => {
 
         this.setState({
             type: "post",
+            prevType: type,
             clickedBoxId: id,
             clickedBoxName: name
         })
@@ -78,7 +79,7 @@ class Models extends React.Component {
 
     changingView = (type) => {
 
-        console.log("Type from header -> ", type)
+        console.log(type)
 
         this.setState({
             download: false,
@@ -105,18 +106,6 @@ class Models extends React.Component {
             overflow: "scroll"
         }
 
-        if(this.state.downloadData.length > 9) {
-
-            let copiedData = this.state.downloadData
-            copiedData.length = 9
-
-            this.setState({
-                copiedData: this.state.downloadData,
-                downloadData: copiedData
-            })
-
-        }
-
         if(this.state.type === "overview"){
 
             return(
@@ -137,7 +126,7 @@ class Models extends React.Component {
                 <div className = {"models " + this.props.mode} style = {overflow}>
 
                     <ModelsHeader viewController = {this.changingView} mode = {this.props.mode} type = {this.state.type} />
-                    <Category click = {this.processClicking} mode = {this.props.mode} data = {this.state.copiedData} />
+                    <Category click = {this.processClicking} mode = {this.props.mode} data = {this.state.downloadData} />
 
                 </div>           
                 
@@ -149,7 +138,7 @@ class Models extends React.Component {
 
                 <div className = {"models " + this.props.mode} style = {overflow}>
 
-                    <ModelsHeader viewController = {this.changingView} mode = {this.props.mode} type = {this.state.type} model = {this.state.clickedBoxName} />
+                    <ModelsHeader prevType = {this.state.prevType} viewController = {this.changingView} mode = {this.props.mode} type = {this.state.type} model = {this.state.clickedBoxName} />
                     <Post mode = {this.props.mode} model = {this.state.clickedBoxId} />
 
                 </div>

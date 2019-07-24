@@ -17,7 +17,7 @@ class Models extends React.Component {
 
     handleClick = (id, title) => {
 
-        this.props.click(id, title)
+        this.props.click(id, title, `overview`)
 
     }
     

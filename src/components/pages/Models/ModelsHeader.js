@@ -35,8 +35,6 @@ class ModelsHeader extends React.Component {
                 $(".background").addClass("left").removeClass("right")
 
                 this.props.viewController("overview")
-
-                console.log("clicked 1")
                 
             }
 
@@ -55,8 +53,6 @@ class ModelsHeader extends React.Component {
 
                 this.props.viewController("category")
 
-                console.log("clicked 2")
-
             }
     
             if($(".text-field-2").hasClass("clicked")){
@@ -71,8 +67,6 @@ class ModelsHeader extends React.Component {
 
 
     render() { 
-
-        console.log(this.props.type)
         
         let hidden = {
             display: "none"
@@ -162,7 +156,7 @@ class ModelsHeader extends React.Component {
     
                     {this.props.model}
                     
-                    <div onClick = {() => {this.props.viewController("overview")}} className = {"return-button " + this.props.mode}>{returnButton}</div>
+                    <div onClick = {() => {this.props.viewController(this.props.prevType)}} className = {"return-button " + this.props.mode}>{returnButton}</div>
     
                     <div className = {"toogle-button"} style = {hidden}></div>
     

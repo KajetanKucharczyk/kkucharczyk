@@ -38,11 +38,11 @@ class Overview extends React.Component {
                 boxes: []
             });
 
-            this.state.downloadData.forEach((element, key) => {
+            for (let index = 0; index < 9; index++) {
 
-                this.processData(element, this.props.mode)
-
-            })
+                this.processData(this.state.downloadData[index], this.props.mode)
+                
+            }
 
         }
 
