@@ -98,6 +98,7 @@ div.skills {
         text-decoration: underline;
         margin-left: 2vh;
         white-space: nowrap;
+        cursor: default;
         &.desktop {
             font-size: 3vh;
         }

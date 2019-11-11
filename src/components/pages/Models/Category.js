@@ -6,23 +6,40 @@ import "./../../../css/pages/Models.scss"
 import { stat } from "fs";
 
 const ModelTree = styled.div`
-    width: calc(65% - 5vh);
     height: auto;
     position: relative;
     box-sizing: border-box;
+
+    &.mobile{
+        width: calc(100% - 4vh);
+    }
+
+    &.desktop{
+        width: calc(65% - 5vh);
+    }
 `
 const ModelFilters = styled.div`
-    padding: 2vh;
-    width: 35%;
-    height: 86vh;
-    position: absolute;
-    top: 12vh;
-    right: 2vh;
     background-color: white;
     box-sizing: border-box;
     border: 1px solid black;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    &.mobile{
+        width: calc(100% - 4vh);
+        height: auto;
+        margin: 2vh;
+        padding: 2vh;
+    }
+
+    &.desktop{
+        position: absolute;
+        top: 12vh;
+        right: 2vh;
+        width: 35%;
+        height: 86vh;
+        padding: 2vh;
+    }
 `
 
 const Model = styled.div`
@@ -90,7 +107,15 @@ const ModelFiltersTitle = styled.div`
     font-size: 5vh;
     font-family: Enigmatic;
 `
+const ExpandFilters = styled.div`
+    &.opened{
+        display: initial;
+    }
 
+    &.closed{
+        display: none;
+    }
+`
 
 const ModelFiltersChosen = styled.div``
 const ModelFiltersChosenTitle = styled.div`
@@ -155,7 +180,8 @@ class Category extends React.Component {
                 "Inbox"
             ],
             chosenItems: [],
-            chosenItemsList: []
+            chosenItemsList: [],
+            filtersToDisplay: []
         }
 
     }
@@ -307,6 +333,20 @@ class Category extends React.Component {
 
     }
 
+    expandFilters = () => {
+
+        if($("div.expand-filters").hasClass("opened") && $("div.expand-filters").hasClass("mobile")) {
+
+            $("div.expand-filters").addClass("closed").removeClass("opened")
+
+        } else {
+
+            $("div.expand-filters").removeClass("closed").addClass("opened")
+
+        }
+
+    }
+
 
     render() {  
 
@@ -324,30 +364,34 @@ class Category extends React.Component {
 
             <>
 
-                <ModelTree>
-                    {this.state.items}
-                </ModelTree>
+                <ModelFilters className = {`model-filters ${this.props.mode}`}>
 
-                <ModelFilters>
+                    <ModelFiltersTitle onClick = {this.expandFilters}>Filtruj</ModelFiltersTitle>
 
-                    <ModelFiltersTitle>Filtruj</ModelFiltersTitle>
+                    <ExpandFilters className = {`expand-filters ${this.props.mode === "mobile" ? "closed": ""} ${this.props.mode}`}>
 
-                    <ModelFiltersChosen>
-                            {chosenTitle}
-                            <ModelFiltersChosenItems>{this.state.chosenItemsList}</ModelFiltersChosenItems>
-                    </ModelFiltersChosen>
+                        <ModelFiltersChosen>
+                                {chosenTitle}
+                                <ModelFiltersChosenItems>{this.state.chosenItemsList}</ModelFiltersChosenItems>
+                        </ModelFiltersChosen>
 
-                    <ModelFiltersTags>
-                        <ModelFiltersTagsTitle>TAGI:</ModelFiltersTagsTitle>
-                        <ModelFiltersTagsField>{this.state.tags}</ModelFiltersTagsField>
-                    </ModelFiltersTags>
+                        <ModelFiltersTags>
+                            <ModelFiltersTagsTitle>TAGI:</ModelFiltersTagsTitle>
+                            <ModelFiltersTagsField>{this.state.tags}</ModelFiltersTagsField>
+                        </ModelFiltersTags>
 
-                    <ModelFiltersCategory>
-                        <ModelFiltersCategoryTitle>KATEGORIE:</ModelFiltersCategoryTitle>
-                        <ModelFiltersCategoryField>{this.state.categories}</ModelFiltersCategoryField>
-                    </ModelFiltersCategory>
+                        <ModelFiltersCategory>
+                            <ModelFiltersCategoryTitle>KATEGORIE:</ModelFiltersCategoryTitle>
+                            <ModelFiltersCategoryField>{this.state.categories}</ModelFiltersCategoryField>
+                        </ModelFiltersCategory>
+
+                    </ExpandFilters>
 
                 </ModelFilters>
+
+                <ModelTree className = {`model-tree ${this.props.mode}`}>
+                    {this.state.items}
+                </ModelTree>
 
             </>
 

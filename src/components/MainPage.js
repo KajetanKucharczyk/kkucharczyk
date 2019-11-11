@@ -1,7 +1,6 @@
 import React from "react"
 import {
-    Route,
-    HashRouter
+    BrowserRouter as Router, Route
 } from "react-router-dom"
 
 import "./../css/MainPage.scss"
@@ -140,7 +139,7 @@ class MainPage extends React.Component {
 
             <div className = {"container " + this.props.mode}>
                 
-                <HashRouter>
+                <Router>
 
                     {header}
 
@@ -156,7 +155,7 @@ class MainPage extends React.Component {
 
                     </div>
 
-                </HashRouter>
+                </Router>
 
             </div>           
             

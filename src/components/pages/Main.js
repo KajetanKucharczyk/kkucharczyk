@@ -180,7 +180,7 @@ class Main extends React.Component {
             <div className = { "myName " + this.props.mode } >
                 <p className = { "_title " + this.props.mode } > Jeszcze nie inżynier </p> 
                 <p className = { "name " + this.props.mode } > Kajetan Kucharczyk </p> 
-                <p className = { "email " + this.props.mode } > < a href = "mailto:kucharczyk.kajetan@gmail.com" > kucharczyk.kajetan @gmail.com </a></p>
+                <p className = { "email " + this.props.mode } > < a href = "mailto:kucharczyk.kajetan@gmail.com" > kucharczyk.kajetan@gmail.com </a></p>
             </div>
 
             </div>

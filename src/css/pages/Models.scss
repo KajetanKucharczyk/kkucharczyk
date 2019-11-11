@@ -50,7 +50,7 @@ div.models-header{
         
         height: $toogle-button-height;
         margin-right: 1vw;
-        font-size: 2vh;
+        font-size: 4vh;
         text-align: center;
         border: 2px solid white;
         color: white;
@@ -145,16 +145,17 @@ div.models-header{
         }
         &.mobile{
             position: fixed;
-            bottom: 3vh;
+            top: 12vh;
             right: -4px;
             width: calc(100vw - 4px);
             background-color: black;
+            height: 10vh;
 
             & .background{
                 position: absolute;
                 top:0px;            
                 width: 50vw;
-                height: $toogle-button-height;
+                height: 10vh;
                 background-color: white;
                 transition: all 200ms ease-in-out;
     
@@ -178,8 +179,8 @@ div.models-header{
                     top:0px;
                     left:0px;
                     width: 50vw;
-                    height: $toogle-button-height;
-                    line-height: $toogle-button-height;
+                    height: 10vh;
+                    line-height: 10vh;
                 }
                 &:nth-of-type(3){
                     position: absolute;
@@ -187,7 +188,8 @@ div.models-header{
                     right:0px;
                     width: 50vw;
                     height: 8vh;
-                    line-height: 8vh;
+                    line-height: 10vh;
+                    height: 10vh;
                 }
             }
         }
@@ -205,7 +207,8 @@ div.models{
     }
     &.mobile{
         overflow: auto;
-        height: calc(100% - 20vh);
+        box-sizing: border-box;
+        height: calc(100% - 10vh);
         margin-top: 10vh;
     }
 

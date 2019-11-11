@@ -3,6 +3,21 @@ import $ from 'jquery';
 
 import "./../../css/pages/Portfolio.css"
 
+let data = [
+    {
+        company: "AGTOM",
+        products: [
+
+        ],
+    },
+    {
+        company: "KKUCHARCZYK",
+        products: [
+
+        ],
+    }
+]
+
 class Portfolio extends React.Component {
 
     constructor(props){
@@ -18,9 +33,9 @@ class Portfolio extends React.Component {
 
         return(
 
-            <div>
-                Portfolio
-            </div>           
+            <>
+                
+            </>           
             
         )
 

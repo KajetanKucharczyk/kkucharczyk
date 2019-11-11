@@ -91,80 +91,80 @@ class AboutMe extends React.Component {
 
                 <div className={"hastags-header " + this.props.mode} > Stack technologiczny: </div>
                         
-                    <span className={"hashtag " + this.props.mode} > HTML </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > HTML 5 </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > CSS </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > SASS </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > JavaScript </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > JavaScript ES6 </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > jQuery </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > REACT </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > REACT Redux </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > REACT Router </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > AJAX </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > PHP </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > OOP </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > CPP </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > JAVA / Android </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > SMARTY / Prestashop </span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >HTML</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >HTML 5</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >CSS</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >SASS</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >JavaScript</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >JavaScript ES6</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >jQuery</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >REACT</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >REACT Redux</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >REACT Router</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >AJAX</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >PHP</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >OOP</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >CPP</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >JAVA / Android</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >SMARTY / Prestashop</span><span> </span >
 
                 <div className={"hastags-header " + this.props.mode} > Umiejętności: </div>
                                                                                             
-                    <span className={"hashtag " + this.props.mode} > pixel perfect </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > problem solving </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > English </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > prawo jazdy </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > innowacyjność </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > GIMP </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Photoshop </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Corel Draw </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Office 365 </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > całkowanie </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > klejenie modeli </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > malowanie modeli </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > fotografowanie modeli </span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >pixel perfect</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >problem solving</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >English</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >prawo jazdy</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >innowacyjność</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >GIMP</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Photoshop</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Corel Draw</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Office 365</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >całkowanie</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >klejenie modeli</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >malowanie modeli</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >fotografowanie modeli</span><span> </span >
 
                 <div className={"hastags-header " + this.props.mode} > Wykształcenie: </div>
                                                                                                                                                     
-                    <span className={"hashtag " + this.props.mode} > ZSŁ </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Informatyka </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Aplikacje internetowy </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Matura </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > AGH </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Fizyka techniczna </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Fizyka ogólna </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Fizyka współczesna </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Fizyka kwantowa </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Fizyka jądrowa </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Fizyka środowiska </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Modelowanie komputerowe </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Elektronika </span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >ZSŁ</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Informatyka</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Aplikacje internetowy</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Matura</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >AGH</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Fizyka techniczna</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Fizyka ogólna</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Fizyka współczesna</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Fizyka kwantowa</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Fizyka jądrowa</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Fizyka środowiska</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Modelowanie komputerowe</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Elektronika</span><span> </span >
 
                 <div className={"hastags-header " + this.props.mode} > Zainteresowania: </div>
                                                                                                                                                                                                                 
-                    <span className={"hashtag " + this.props.mode} > Modelarstwo </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > II Wojna Światowa </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Historia </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Technologie </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Nowe technologie </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Smartphony </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Recencje sprzętów </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Artykuły RSS </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Feedly </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Piłka nożna </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Liga Mistrzów </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > LaLiga </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > FC Barcelona </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Cracovia </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Filmy </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Horrory </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Książki </span><span> </span >
-                    <span className={"hashtag " + this.props.mode} > Stephen King </span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Modelarstwo</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >II Wojna Światowa</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Historia</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Technologie</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Nowe technologie</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Smartphony</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Recencje sprzętów</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Artykuły RSS</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Feedly</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Piłka nożna</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Liga Mistrzów</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >LaLiga</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >FC Barcelona</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Cracovia</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Filmy</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Horrory</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Książki</span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >Stephen King</span><span> </span >
 
 
                  <div className={"hastags-header " + this.props.mode} > Wady: </div>
                                                                                                                                                                                                                                                                                         
-                    <span className={"hashtag " + this.props.mode} > hehe </span><span> </span >
+                    <span className={"hashtag " + this.props.mode} >hehe</span><span> </span >
 
                 </div>
 
