@@ -178,7 +178,7 @@ class Main extends React.Component {
             <img  alt = "" className = { "myImage-hidden " + this.props.mode } src = { ja1 } />
 
             <div className = { "myName " + this.props.mode } >
-                <p className = { "_title " + this.props.mode } > Jeszcze nie inżynier </p> 
+                <p className = { "_title " + this.props.mode } >Dumny inżynier od 2020 roku</p> 
                 <p className = { "name " + this.props.mode } > Kajetan Kucharczyk </p> 
                 <p className = { "email " + this.props.mode } > < a href = "mailto:kucharczyk.kajetan@gmail.com" > kucharczyk.kajetan@gmail.com </a></p>
             </div>
